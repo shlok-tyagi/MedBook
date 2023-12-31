@@ -9,21 +9,65 @@
 /* Begin PBXBuildFile section */
 		794500442B3D68400035D295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500432B3D68400035D295 /* AppDelegate.swift */; };
 		794500462B3D68400035D295 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500452B3D68400035D295 /* SceneDelegate.swift */; };
-		794500482B3D68400035D295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500472B3D68400035D295 /* ViewController.swift */; };
+		794500482B3D68400035D295 /* MBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500472B3D68400035D295 /* MBBaseViewController.swift */; };
 		7945004B2B3D68400035D295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794500492B3D68400035D295 /* Main.storyboard */; };
 		7945004D2B3D68420035D295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7945004C2B3D68420035D295 /* Assets.xcassets */; };
 		794500502B3D68420035D295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7945004E2B3D68420035D295 /* LaunchScreen.storyboard */; };
+		794500582B3D6BF60035D295 /* MBBookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500572B3D6BF60035D295 /* MBBookListViewController.swift */; };
+		7945005E2B3D7CA70035D295 /* MBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945005D2B3D7CA70035D295 /* MBRequest.swift */; };
+		794500602B3D7CC10035D295 /* MBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945005F2B3D7CC10035D295 /* MBService.swift */; };
+		794500622B3D7F130035D295 /* MBQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500612B3D7F130035D295 /* MBQueryParams.swift */; };
+		794500662B3D88DA0035D295 /* MBBookResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500652B3D88DA0035D295 /* MBBookResult.swift */; };
+		794500692B3D893F0035D295 /* MBBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500682B3D893F0035D295 /* MBBook.swift */; };
+		7945006C2B3D9F9B0035D295 /* MBBookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945006B2B3D9F9B0035D295 /* MBBookListViewModel.swift */; };
+		7945006E2B3DA1220035D295 /* MBBookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945006D2B3DA1220035D295 /* MBBookListView.swift */; };
+		794500712B3DC9990035D295 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500702B3DC9990035D295 /* Extensions.swift */; };
+		794500742B3DF5F00035D295 /* MBBookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500732B3DF5F00035D295 /* MBBookListTableViewCell.swift */; };
+		794500762B3DF8490035D295 /* MBBookListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500752B3DF8490035D295 /* MBBookListTableViewCellViewModel.swift */; };
+		794500782B3ED3220035D295 /* MBImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500772B3ED3220035D295 /* MBImageLoader.swift */; };
+		7945007B2B3F41050035D295 /* MBLandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945007A2B3F41050035D295 /* MBLandingPageViewController.swift */; };
+		7945007D2B3F53570035D295 /* MBSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945007C2B3F53570035D295 /* MBSignUpViewController.swift */; };
+		7945007F2B3F53720035D295 /* MBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945007E2B3F53720035D295 /* MBLoginViewController.swift */; };
+		794500812B3F55390035D295 /* MBLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500802B3F55390035D295 /* MBLoginView.swift */; };
+		794500832B3F55600035D295 /* MBSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500822B3F55600035D295 /* MBSignUpView.swift */; };
+		794500852B3F55B50035D295 /* MBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500842B3F55B50035D295 /* MBLoginViewModel.swift */; };
+		794500872B3F55C50035D295 /* MBSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500862B3F55C50035D295 /* MBSignUpViewModel.swift */; };
+		794500892B3FF60F0035D295 /* MBCredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794500882B3FF60E0035D295 /* MBCredentialsManager.swift */; };
+		7945008B2B4032D80035D295 /* MBCountryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945008A2B4032D70035D295 /* MBCountryResult.swift */; };
+		7945008D2B4033730035D295 /* MBCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945008C2B4033730035D295 /* MBCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		794500402B3D68400035D295 /* MedBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794500432B3D68400035D295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794500452B3D68400035D295 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		794500472B3D68400035D295 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		794500472B3D68400035D295 /* MBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBaseViewController.swift; sourceTree = "<group>"; };
 		7945004A2B3D68400035D295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7945004C2B3D68420035D295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7945004F2B3D68420035D295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794500512B3D68420035D295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794500572B3D6BF60035D295 /* MBBookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListViewController.swift; sourceTree = "<group>"; };
+		7945005D2B3D7CA70035D295 /* MBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRequest.swift; sourceTree = "<group>"; };
+		7945005F2B3D7CC10035D295 /* MBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBService.swift; sourceTree = "<group>"; };
+		794500612B3D7F130035D295 /* MBQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBQueryParams.swift; sourceTree = "<group>"; };
+		794500652B3D88DA0035D295 /* MBBookResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookResult.swift; sourceTree = "<group>"; };
+		794500682B3D893F0035D295 /* MBBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBook.swift; sourceTree = "<group>"; };
+		7945006B2B3D9F9B0035D295 /* MBBookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListViewModel.swift; sourceTree = "<group>"; };
+		7945006D2B3DA1220035D295 /* MBBookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListView.swift; sourceTree = "<group>"; };
+		794500702B3DC9990035D295 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		794500732B3DF5F00035D295 /* MBBookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListTableViewCell.swift; sourceTree = "<group>"; };
+		794500752B3DF8490035D295 /* MBBookListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		794500772B3ED3220035D295 /* MBImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBImageLoader.swift; sourceTree = "<group>"; };
+		7945007A2B3F41050035D295 /* MBLandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLandingPageViewController.swift; sourceTree = "<group>"; };
+		7945007C2B3F53570035D295 /* MBSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSignUpViewController.swift; sourceTree = "<group>"; };
+		7945007E2B3F53720035D295 /* MBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLoginViewController.swift; sourceTree = "<group>"; };
+		794500802B3F55390035D295 /* MBLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLoginView.swift; sourceTree = "<group>"; };
+		794500822B3F55600035D295 /* MBSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSignUpView.swift; sourceTree = "<group>"; };
+		794500842B3F55B50035D295 /* MBLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLoginViewModel.swift; sourceTree = "<group>"; };
+		794500862B3F55C50035D295 /* MBSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSignUpViewModel.swift; sourceTree = "<group>"; };
+		794500882B3FF60E0035D295 /* MBCredentialsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCredentialsManager.swift; sourceTree = "<group>"; };
+		7945008A2B4032D70035D295 /* MBCountryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCountryResult.swift; sourceTree = "<group>"; };
+		7945008C2B4033730035D295 /* MBCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCountry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +100,101 @@
 		794500422B3D68400035D295 /* MedBook */ = {
 			isa = PBXGroup;
 			children = (
+				7945005C2B3D7C880035D295 /* API */,
+				794500792B3ED32A0035D295 /* Managers */,
+				794500632B3D88A60035D295 /* Models */,
+				7945006F2B3DA1260035D295 /* Views */,
+				7945006A2B3D9DF40035D295 /* ViewModels */,
+				794500722B3DD0840035D295 /* Controllers */,
 				794500432B3D68400035D295 /* AppDelegate.swift */,
 				794500452B3D68400035D295 /* SceneDelegate.swift */,
-				794500472B3D68400035D295 /* ViewController.swift */,
+				794500702B3DC9990035D295 /* Extensions.swift */,
 				794500492B3D68400035D295 /* Main.storyboard */,
 				7945004C2B3D68420035D295 /* Assets.xcassets */,
 				7945004E2B3D68420035D295 /* LaunchScreen.storyboard */,
 				794500512B3D68420035D295 /* Info.plist */,
 			);
 			path = MedBook;
+			sourceTree = "<group>";
+		};
+		7945005C2B3D7C880035D295 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7945005F2B3D7CC10035D295 /* MBService.swift */,
+				7945005D2B3D7CA70035D295 /* MBRequest.swift */,
+				794500612B3D7F130035D295 /* MBQueryParams.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		794500632B3D88A60035D295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				794500672B3D892E0035D295 /* DataTypes */,
+				794500642B3D88B30035D295 /* APIResponse */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		794500642B3D88B30035D295 /* APIResponse */ = {
+			isa = PBXGroup;
+			children = (
+				794500652B3D88DA0035D295 /* MBBookResult.swift */,
+				7945008A2B4032D70035D295 /* MBCountryResult.swift */,
+			);
+			path = APIResponse;
+			sourceTree = "<group>";
+		};
+		794500672B3D892E0035D295 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				794500682B3D893F0035D295 /* MBBook.swift */,
+				7945008C2B4033730035D295 /* MBCountry.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		7945006A2B3D9DF40035D295 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				794500842B3F55B50035D295 /* MBLoginViewModel.swift */,
+				794500862B3F55C50035D295 /* MBSignUpViewModel.swift */,
+				7945006B2B3D9F9B0035D295 /* MBBookListViewModel.swift */,
+				794500752B3DF8490035D295 /* MBBookListTableViewCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7945006F2B3DA1260035D295 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				794500802B3F55390035D295 /* MBLoginView.swift */,
+				794500822B3F55600035D295 /* MBSignUpView.swift */,
+				7945006D2B3DA1220035D295 /* MBBookListView.swift */,
+				794500732B3DF5F00035D295 /* MBBookListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		794500722B3DD0840035D295 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				794500472B3D68400035D295 /* MBBaseViewController.swift */,
+				7945007A2B3F41050035D295 /* MBLandingPageViewController.swift */,
+				7945007E2B3F53720035D295 /* MBLoginViewController.swift */,
+				7945007C2B3F53570035D295 /* MBSignUpViewController.swift */,
+				794500572B3D6BF60035D295 /* MBBookListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		794500792B3ED32A0035D295 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				794500772B3ED3220035D295 /* MBImageLoader.swift */,
+				794500882B3FF60E0035D295 /* MBCredentialsManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +268,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794500482B3D68400035D295 /* ViewController.swift in Sources */,
+				794500742B3DF5F00035D295 /* MBBookListTableViewCell.swift in Sources */,
+				794500482B3D68400035D295 /* MBBaseViewController.swift in Sources */,
+				7945008B2B4032D80035D295 /* MBCountryResult.swift in Sources */,
+				7945005E2B3D7CA70035D295 /* MBRequest.swift in Sources */,
+				7945006C2B3D9F9B0035D295 /* MBBookListViewModel.swift in Sources */,
+				7945006E2B3DA1220035D295 /* MBBookListView.swift in Sources */,
+				7945007D2B3F53570035D295 /* MBSignUpViewController.swift in Sources */,
 				794500442B3D68400035D295 /* AppDelegate.swift in Sources */,
+				794500782B3ED3220035D295 /* MBImageLoader.swift in Sources */,
 				794500462B3D68400035D295 /* SceneDelegate.swift in Sources */,
+				794500602B3D7CC10035D295 /* MBService.swift in Sources */,
+				794500892B3FF60F0035D295 /* MBCredentialsManager.swift in Sources */,
+				7945008D2B4033730035D295 /* MBCountry.swift in Sources */,
+				794500712B3DC9990035D295 /* Extensions.swift in Sources */,
+				794500582B3D6BF60035D295 /* MBBookListViewController.swift in Sources */,
+				794500812B3F55390035D295 /* MBLoginView.swift in Sources */,
+				794500622B3D7F130035D295 /* MBQueryParams.swift in Sources */,
+				794500852B3F55B50035D295 /* MBLoginViewModel.swift in Sources */,
+				7945007B2B3F41050035D295 /* MBLandingPageViewController.swift in Sources */,
+				794500692B3D893F0035D295 /* MBBook.swift in Sources */,
+				7945007F2B3F53720035D295 /* MBLoginViewController.swift in Sources */,
+				794500832B3F55600035D295 /* MBSignUpView.swift in Sources */,
+				794500662B3D88DA0035D295 /* MBBookResult.swift in Sources */,
+				794500762B3DF8490035D295 /* MBBookListTableViewCellViewModel.swift in Sources */,
+				794500872B3F55C50035D295 /* MBSignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +444,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +453,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shlok.MedBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,8 +474,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +483,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shlok.MedBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
